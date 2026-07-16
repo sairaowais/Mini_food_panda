@@ -1,0 +1,276 @@
+body{
+  background:#fdfdfd;
+  font-family:Arial, sans-serif;
+}
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================= SECOND NAVBAR ================= */
+nav.second-navbar {
+  overflow: visible; /* important */
+}
+
+
+.container-fluid1
+{
+ background: #f3f2f2;
+  position:fixed;
+  width:100%;
+  top: 0;
+  z-index: 2000;
+  padding: 6px 0;
+
+
+}
+
+
+/* NAV ITEMS */
+.second-navbar .navbar-nav {
+  gap: 60px; /* desktop spacing */
+}
+
+/* LINKS */
+.second-navbar .nav-link {
+  color: #000 !important;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+.second-navbar .nav-link:hover,
+.second-navbar .nav-link.active {
+  color: #fc0786 !important;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  border-radius: 6px;
+}
+
+.dropdown-item {
+  font-weight: 500;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  .second-navbar {
+    padding: 8px 0;
+  }
+
+  .second-navbar .navbar-nav {
+    gap: 12px; /* reduce height */
+  }
+
+  .second-navbar .nav-item {
+    padding: 4px 0;
+  }
+
+  .second-navbar .navbar-collapse {
+    background: #f8f9fa;
+  }
+
+  .dropdown-menu {
+    position:relative;
+    float: none;
+    width: 100%;
+     background-color: #e4e1e2;
+  }
+
+  .dropdown-item {
+    text-align: center;
+  }
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fdfeff;
+}
+
+
+
+/* Navbar */
+.navbar {
+    position: relative;
+    background: #ff4f9a;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Logo fix */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* vertically center logo */
+}
+
+.navbar-brand img {
+    height: 130px;        /* DESKTOP size */
+    width: auto;
+
+    max-height: none;
+     z-index: 2000;
+}
+
+.name {
+  color: #fbfafa; /* thoda dark red */
+  margin-top: 45px; /* thoda neechay shift */
+  margin-left: 50px; /* center align, optional */
+  font-weight: bold; /* thoda bold */
+  
+}
+
+
+/* Search */
+.search-input {
+    width: 200px;
+}
+
+.search-btn {
+    background-color: #862e5a;
+    color: white;
+    border: none;
+}
+
+.search-btn:hover {
+    background-color: #e60073;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 75px;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}
+/* nav div end */
+
+/* TITLE */
+.category-title{
+  text-align:center;
+  font-size:26px;
+  font-weight:700;
+  color:#ff4f9a;
+  margin-bottom:30px;
+}
+
+/* LARGE CARD */
+.large-card{
+  background:#ff4f9a;
+  color:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:.3s;
+}
+.large-card:hover{ transform:translateY(-6px); }
+.large-card img{
+  height:200px;
+  object-fit:cover;
+}
+
+/* SMALL CARD */
+.food-card{
+  border-radius:12px;
+  overflow:hidden;
+  transition:.3s;
+}
+.food-card:hover{ transform:scale(1.05); }
+
+/* BLUR */
+.blur{ filter:blur(4px); }
+
+/* OVERLAY */
+.small-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+ 
+  z-index:10;
+  padding-top:60px;
+  display:none;
+}
+
+
+.back-arrow {
+  position: absolute;
+  top: 15px;
+  right: 120px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*  start  footer div***********/  
+.food-footer {
+    position: relative;
+    background: #ff4f9a; /* Pink theme */
+}
+
+.food-footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.food-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.food-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #ff4f9a;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 5px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    background: #ff1f7a;
+    color: white;
+}
+
+/* Mobile Center Alignment */
+@media (max-width: 576px) {
+    .food-footer {
+        text-align: center;
+    }
+}
+/* end footer div***********/  
